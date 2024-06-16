@@ -1,0 +1,19 @@
+cd app\
+cd [app-name]\
+ls\
+sudo chmod 777 [file-name]
+
+-----------------------------------------------
+sudo nano apps.text
+
+--------------------to start new and erase db------------------
+bench --site [site-name] reinstall
+
+---------ui error----------------------
+bench build
+
+------------server error-------------
+bench migrate
+
+---------------system id being updating----------
+maintainance mode:0

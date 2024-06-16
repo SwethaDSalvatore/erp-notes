@@ -1,0 +1,16 @@
+----------------------------new app-------------------------------
+bench get-app hrms
+(or)
+bench new-app [app_name]
+
+cd site\
+bench --site [site-name] install-app [app_name]
+
+-----------------------------remove app----------------------------
+cd apps\
+sudo rm -r hrms
+
+cd site\
+bench --site [site-name] uninstall-app [app_name]
+
+-------------------------------------------------------------------
