@@ -1,0 +1,296 @@
+Step 2: Inventory Management
+
+    Setup Items:
+        Go to Stock > Item and create items for each raw material (e.g., bananas, flour, sugar, etc.) and finished products (banana cakes).
+
+    Warehouses:
+        Create warehouses for raw materials, work-in-progress (WIP), and finished goods to track stock at different stages of production.
+
+#################################################################################        
+
+Step-by-Step Guide to Creating Stock Entries in ERPNext
+1. Log in to ERPNext
+
+    Access your ERPNext instance:
+        Navigate to your ERPNext dashboard.
+
+2. Accessing the Stock Entry Module
+
+    Go to the Stock Module:
+        On the ERPNext dashboard, navigate to Stock.
+        Click on Stock Entry.
+
+3. Creating Stock Entry SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: Automatically generated or you can customize it.
+        Purchase Order: Link this stock entry to the purchase order (PO-0001).
+        From Supplier: Select the supplier from whom the items are being received.
+
+    Add Items:
+        Item Code: Select "Bananas".
+        Qty: Enter the quantity received (e.g., 100 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Eggs".
+        Qty: Enter the quantity received (e.g., 200 units).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save and Submit:
+        Click Save to save the stock entry.
+        Click Submit to finalize the stock entry.
+
+4. Creating Stock Entry SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: Automatically generated or you can customize it.
+        Purchase Order: Link this stock entry to the purchase order (PO-0002).
+        From Supplier: Select the supplier from whom the items are being received.
+
+    Add Items:
+        Item Code: Select "Flour".
+        Qty: Enter the quantity received (e.g., 50 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Sugar".
+        Qty: Enter the quantity received (e.g., 30 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Baking Powder".
+        Qty: Enter the quantity received (e.g., 10 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Butter".
+        Qty: Enter the quantity received (e.g., 20 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save and Submit:
+        Click Save to save the stock entry.
+        Click Submit to finalize the stock entry.
+
+Example Screenshots (Conceptual)
+SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Purpose: Material Receipt
+    Purchase Order: PO-0001
+    Items:
+        Bananas (100 kg) to Raw Materials Warehouse
+        Eggs (200 units) to Raw Materials Warehouse
+
+SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+    Purpose: Material Receipt
+    Purchase Order: PO-0002
+    Items:
+        Flour (50 kg) to Raw Materials Warehouse
+        Sugar (30 kg) to Raw Materials Warehouse
+        Baking Powder (10 kg) to Raw Materials Warehouse
+        Butter (20 kg) to Raw Materials Warehouse
+
+Conclusion
+
+By following these steps, you can create detailed stock entries in ERPNext for the receipt of materials against specific purchase orders. This process ensures that your inventory is accurately updated, reflecting the actual stock levels of raw materials received in your banana cake factory.
+
+#########################################################################################
+
+Step-by-Step Guide to Creating Stock Entries in ERPNext
+1. Log in to ERPNext
+
+    Access your ERPNext instance:
+        Navigate to your ERPNext dashboard.
+
+2. Accessing the Stock Entry Module
+
+    Go to the Stock Module:
+        On the ERPNext dashboard, navigate to Stock.
+        Click on Stock Entry.
+
+3. Creating Stock Entry SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: Automatically generated or you can customize it.
+        Purchase Order: Link this stock entry to the purchase order (PO-0001).
+        From Supplier: Select the supplier from whom the items are being received.
+
+    Add Items:
+        Item Code: Select "Bananas".
+        Qty: Enter the quantity received (e.g., 100 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Eggs".
+        Qty: Enter the quantity received (e.g., 200 units).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save and Submit:
+        Click Save to save the stock entry.
+        Click Submit to finalize the stock entry.
+
+4. Creating Stock Entry SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: Automatically generated or you can customize it.
+        Purchase Order: Link this stock entry to the purchase order (PO-0002).
+        From Supplier: Select the supplier from whom the items are being received.
+
+    Add Items:
+        Item Code: Select "Flour".
+        Qty: Enter the quantity received (e.g., 50 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Sugar".
+        Qty: Enter the quantity received (e.g., 30 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Baking Powder".
+        Qty: Enter the quantity received (e.g., 10 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Butter".
+        Qty: Enter the quantity received (e.g., 20 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save and Submit:
+        Click Save to save the stock entry.
+        Click Submit to finalize the stock entry.
+
+Example Screenshots (Conceptual)
+SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Purpose: Material Receipt
+    Purchase Order: PO-0001
+    Items:
+        Bananas (100 kg) to Raw Materials Warehouse
+        Eggs (200 units) to Raw Materials Warehouse
+
+SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+    Purpose: Material Receipt
+    Purchase Order: PO-0002
+    Items:
+        Flour (50 kg) to Raw Materials Warehouse
+        Sugar (30 kg) to Raw Materials Warehouse
+        Baking Powder (10 kg) to Raw Materials Warehouse
+        Butter (20 kg) to Raw Materials Warehouse
+
+Conclusion
+
+By following these steps, you can create detailed stock entries in ERPNext for the receipt of materials against specific purchase orders. This process ensures that your inventory is accurately updated, reflecting the actual stock levels of raw materials received in your banana cake factory.
+
+##########################################################################################
+
+Creating warehouses for raw materials, work-in-progress (WIP), and finished goods in ERPNext helps you track stock accurately at different stages of production. Here’s a step-by-step guide on how to set up these warehouses:
+Step-by-Step Guide to Creating Warehouses in ERPNext
+1. Accessing the Warehouses Module
+
+    Log in to ERPNext:
+        Navigate to your ERPNext dashboard.
+
+    Go to the Stock Module:
+        In the ERPNext dashboard, go to Stock.
+        Click on Warehouses.
+
+2. Creating the Raw Materials Warehouse
+
+    Add a New Warehouse:
+        Click on the New button or + Add Warehouse.
+
+    Enter Warehouse Details:
+        Warehouse Name: Enter "Raw Materials Warehouse".
+        Parent Warehouse: Select the appropriate parent warehouse if applicable, or leave it as the root warehouse.
+        Warehouse Type: Select "Raw Material" or leave it blank if the type is not required.
+        Company: Select your company name ("Banana Bliss Cake Factory").
+
+    Save the Warehouse:
+        Click Save to create the new warehouse.
+
+3. Creating the Work-in-Progress (WIP) Warehouse
+
+    Add a New Warehouse:
+        Click on the New button or + Add Warehouse.
+
+    Enter Warehouse Details:
+        Warehouse Name: Enter "Work-in-Progress (WIP) Warehouse".
+        Parent Warehouse: Select the appropriate parent warehouse if applicable, or leave it as the root warehouse.
+        Warehouse Type: Select "WIP" or leave it blank if the type is not required.
+        Company: Select your company name ("Banana Bliss Cake Factory").
+
+    Save the Warehouse:
+        Click Save to create the new warehouse.
+
+4. Creating the Finished Goods Warehouse
+
+    Add a New Warehouse:
+        Click on the New button or + Add Warehouse.
+
+    Enter Warehouse Details:
+        Warehouse Name: Enter "Finished Goods Warehouse".
+        Parent Warehouse: Select the appropriate parent warehouse if applicable, or leave it as the root warehouse.
+        Warehouse Type: Select "Finished Goods" or leave it blank if the type is not required.
+        Company: Select your company name ("Banana Bliss Cake Factory").
+
+    Save the Warehouse:
+        Click Save to create the new warehouse.
+
+Example of Warehouse Structure
+
+scss
+
+Warehouses
+ ├── Raw Materials Warehouse
+ ├── Work-in-Progress (WIP) Warehouse
+ └── Finished Goods Warehouse
+
+Detailed Steps with Screenshots (Optional)
+
+If you need a more visual guide, consider these general steps with reference to typical ERPNext interfaces:
+
+    Access Stock Module:
+        Navigate to Stock > Warehouses.
+
+    Create New Warehouse:
+        Click on New or + Add Warehouse.
+
+    Fill in Warehouse Details:
+        Enter the relevant details like Warehouse Name, Parent Warehouse, Warehouse Type, and Company.
+        Save the changes.
+
+Using the Warehouses
+
+    Stock Entries:
+        When you purchase raw materials, receive them into the Raw Materials Warehouse.
+        As production progresses, move items from the Raw Materials Warehouse to the WIP Warehouse.
+        Once production is complete, move finished products to the Finished Goods Warehouse.
+
+    Tracking and Reporting:
+        Use the warehouse structure to track inventory levels at each stage of production.
+        Generate stock reports to analyze stock levels, movements, and inventory valuation.
+
+Conclusion
+
+By setting up warehouses for raw materials, work-in-progress, and finished goods in ERPNext, you can effectively track and manage your inventory through the different stages of production. This setup not only enhances inventory control but also improves accuracy in reporting and decision-making for your banana cake factory.
+
+###########################################################################################

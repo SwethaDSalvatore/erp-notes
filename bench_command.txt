@@ -1,0 +1,28 @@
+Common Bench Commands:
+
+    Setup and Initialization:
+        bench init [bench-name]: Initializes a new Bench environment.
+        bench new-site [site-name]: Creates a new site.
+
+    Application Management:
+        bench get-app [app-name] [repo-url]: Clones a Frappe app from a repository.
+        bench install-app [app-name]: Installs an app on the current site.
+
+        bench get-app erpnext https://github.com/frappe/erpnext
+        bench --site mysite.local install-app erpnext
+
+    Server Management:
+        bench start: Starts the Frappe development server.
+        bench restart: Restarts the Frappe server.
+
+    Site Management:
+        bench use [site-name]: Switches to a specific site.
+        bench backup: Takes a backup of the current site.
+
+    Update and Maintenance:
+        bench update: Updates Frappe and all installed apps.
+        bench migrate: Applies schema changes to the database after updating apps.
+
+    Utilities:
+        bench backup: Backs up the site’s database and files.
+        bench restore [sql-file-path]: Restores the site’s database from a backup.

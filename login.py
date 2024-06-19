@@ -1,4 +1,6 @@
-
+email 
+notifi
+reports
 ####################### terminal command ################################
 # sudo su - test
 # 123

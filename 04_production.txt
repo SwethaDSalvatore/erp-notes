@@ -1,0 +1,378 @@
+Step 4: Production
+
+    Bill of Materials (BOM):
+
+        BOM-0001 (Banana Cake - Small):
+            Bananas: 2 kg
+            Flour: 1 kg
+            Sugar: 0.5 kg
+            Eggs: 1 dozen
+            Baking Powder: 0.1 kg
+            Butter: 0.2 kg
+
+        BOM-0002 (Banana Cake - Large):
+            Bananas: 4 kg
+            Flour: 2 kg
+            Sugar: 1 kg
+            Eggs: 2 dozen
+            Baking Powder: 0.2 kg
+            Butter: 0.4 kg
+
+    Production Planning:
+        PP-0001: Plan to produce 50 small banana cakes and 30 large banana cakes
+
+    Work Orders:
+        WO-0001: Produce 50 small banana cakes using BOM-0001
+        WO-0002: Produce 30 large banana cakes using BOM-0002
+
+##########################################################################################
+Creating Bills of Materials (BOM), Production Plans, and Work Orders in ERPNext involves several steps. Here’s a detailed guide on how to set up and manage the production of banana cakes:
+Step 1: Create Bills of Materials (BOM)
+BOM-0001 (Banana Cake - Small)
+
+    Navigate to BOM:
+        Go to Manufacturing > Bill of Materials.
+
+    Create a New BOM:
+        Click New to create a new BOM.
+
+    Enter BOM Details:
+        Item: Enter "Banana Cake - Small".
+        Quantity: Enter 1 (since the BOM is for one unit of Banana Cake - Small).
+
+    Add Raw Materials:
+        Click on Add Row to add the raw materials:
+            Item: Bananas
+            Quantity: 2 kg
+        Add another row:
+            Item: Flour
+            Quantity: 1 kg
+        Add another row:
+            Item: Sugar
+            Quantity: 0.5 kg
+        Add another row:
+            Item: Eggs
+            Quantity: 1 dozen
+        Add another row:
+            Item: Baking Powder
+            Quantity: 0.1 kg
+        Add another row:
+            Item: Butter
+            Quantity: 0.2 kg
+
+    Save and Submit:
+        Click Save and then Submit.
+
+BOM-0002 (Banana Cake - Large)
+
+    Create a New BOM:
+        Click New to create a new BOM.
+
+    Enter BOM Details:
+        Item: Enter "Banana Cake - Large".
+        Quantity: Enter 1 (since the BOM is for one unit of Banana Cake - Large).
+
+    Add Raw Materials:
+        Click on Add Row to add the raw materials:
+            Item: Bananas
+            Quantity: 4 kg
+        Add another row:
+            Item: Flour
+            Quantity: 2 kg
+        Add another row:
+            Item: Sugar
+            Quantity: 1 kg
+        Add another row:
+            Item: Eggs
+            Quantity: 2 dozen
+        Add another row:
+            Item: Baking Powder
+            Quantity: 0.2 kg
+        Add another row:
+            Item: Butter
+            Quantity: 0.4 kg
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Step 2: Create a Production Plan
+
+    Navigate to Production Plan:
+        Go to Manufacturing > Production Plan.
+
+    Create a New Production Plan:
+        Click New to create a new production plan.
+
+    Enter Production Plan Details:
+        Planned Start Date: Select the start date for the production.
+        Items to Manufacture:
+            Click on Add Row:
+                Item Code: Banana Cake - Small
+                Quantity: 50
+            Click on Add Row:
+                Item Code: Banana Cake - Large
+                Quantity: 30
+
+    Get BOM Items:
+        Click Get BOM Items to automatically fetch the required raw materials based on the BOMs defined.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Step 3: Create Work Orders
+WO-0001: Produce 50 Small Banana Cakes
+
+    Navigate to Work Order:
+        Go to Manufacturing > Work Order.
+
+    Create a New Work Order:
+        Click New to create a new work order.
+
+    Enter Work Order Details:
+        Production Item: Select "Banana Cake - Small".
+        Quantity to Manufacture: Enter 50.
+        BOM: Select BOM-0001.
+        Planned Start Date: Enter the planned start date.
+        Production Plan: Link to the relevant production plan (PP-0001).
+
+    Save and Submit:
+        Click Save and then Submit.
+
+WO-0002: Produce 30 Large Banana Cakes
+
+    Create a New Work Order:
+        Click New to create a new work order.
+
+    Enter Work Order Details:
+        Production Item: Select "Banana Cake - Large".
+        Quantity to Manufacture: Enter 30.
+        BOM: Select BOM-0002.
+        Planned Start Date: Enter the planned start date.
+        Production Plan: Link to the relevant production plan (PP-0001).
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Conclusion
+
+By following these steps, you can create BOMs, production plans, and work orders in ERPNext to manage the production of your banana cakes efficiently. This setup will help ensure you have the right materials and quantities planned and tracked throughout the production process.
+####################################################################################
+
+To link a Work Order to a Production Plan in ERPNext, follow these steps. This ensures that the Work Orders are associated with the relevant Production Plan, allowing for better tracking and management of your production processes.
+Detailed Steps to Link Work Orders to a Production Plan
+1. Create a Production Plan (PP-0001)
+
+    Navigate to Production Plan:
+        Go to Manufacturing > Production Plan.
+
+    Create a New Production Plan:
+        Click New to create a new production plan.
+
+    Enter Production Plan Details:
+        Planned Start Date: Enter the planned start date for production.
+        Items to Manufacture:
+            Click on Add Row:
+                Item Code: Banana Cake - Small
+                Quantity: 50
+            Click on Add Row:
+                Item Code: Banana Cake - Large
+                Quantity: 30
+
+    Get BOM Items:
+        Click Get BOM Items to automatically fetch the required raw materials based on the BOMs defined.
+
+    Save and Submit:
+        Click Save and then Submit to finalize the production plan.
+
+2. Create Work Orders and Link to the Production Plan
+WO-0001: Produce 50 Small Banana Cakes
+
+    Navigate to Work Order:
+        Go to Manufacturing > Work Order.
+
+    Create a New Work Order:
+        Click New to create a new work order.
+
+    Enter Work Order Details:
+        Production Item: Select "Banana Cake - Small".
+        Quantity to Manufacture: Enter 50.
+        BOM: Select BOM-0001.
+        Planned Start Date: Enter the planned start date.
+
+    Link to Production Plan:
+        There should be a field named Production Plan. Select the production plan (PP-0001) from the dropdown list.
+
+    Save and Submit:
+        Click Save and then Submit to finalize the work order.
+
+WO-0002: Produce 30 Large Banana Cakes
+
+    Create a New Work Order:
+        Click New to create a new work order.
+
+    Enter Work Order Details:
+        Production Item: Select "Banana Cake - Large".
+        Quantity to Manufacture: Enter 30.
+        BOM: Select BOM-0002.
+        Planned Start Date: Enter the planned start date.
+
+    Link to Production Plan:
+        There should be a field named Production Plan. Select the production plan (PP-0001) from the dropdown list.
+
+    Save and Submit:
+        Click Save and then Submit to finalize the work order.
+
+Example Screenshots (Conceptual)
+Work Order Creation with Production Plan Link
+
+    Work Order Details:
+        Production Item: Banana Cake - Small
+        Quantity: 50
+        BOM: BOM-0001
+        Planned Start Date: [Select Date]
+        Production Plan: PP-0001
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Conclusion
+
+By following these steps, you can link work orders to the relevant production plan in ERPNext. This linkage ensures that your production process is well-coordinated and tracked, facilitating better planning and resource management for your banana cake factory. If you don't see the "Production Plan" field in the work order form, you might need to customize the form to add this linkage, or ensure your ERPNext instance is properly configured to support this workflow.
+
+#####################################################################################
+
+If the field for linking a Work Order to a Production Plan is not available in your ERPNext instance by default, you can follow these steps to customize the Work Order form to include a reference to the Production Plan. This will allow you to link your Work Orders to the relevant Production Plan.
+Step-by-Step Guide to Adding a Custom Field for Production Plan in Work Order
+1. Adding a Custom Field in Work Order
+
+    Navigate to Customize Form:
+        Go to Settings > Customize Form.
+
+    Select Work Order:
+        In the "Enter Form Type" field, type and select Work Order.
+
+    Add Custom Field:
+        Scroll down to the section where you want to add the new field (e.g., under Basic Details).
+        Click Add Row.
+
+    Enter Field Details:
+        Label: Production Plan
+        Field Type: Link
+        Options: Production Plan
+        Insert After: Choose a field after which this new field should be placed (e.g., after "BOM").
+
+    Save the Customization:
+        Click Save to save the changes.
+
+2. Creating Work Orders with the New Custom Field
+
+    Navigate to Work Order:
+        Go to Manufacturing > Work Order.
+
+    Create a New Work Order:
+        Click New to create a new work order.
+
+    Enter Work Order Details:
+        Production Item: Select "Banana Cake - Small".
+        Quantity to Manufacture: Enter 50.
+        BOM: Select BOM-0001.
+        Planned Start Date: Enter the planned start date.
+
+    Link to Production Plan:
+        Production Plan: You will now see the custom field "Production Plan". Select the production plan (PP-0001) from the dropdown list.
+
+    Save and Submit:
+        Click Save and then Submit to finalize the work order.
+
+Example Screenshots (Conceptual)
+
+    Customize Form:
+        In the "Customize Form" page, add a custom field named "Production Plan" of type "Link" with options set to "Production Plan".
+
+    Work Order Creation:
+        In the "New Work Order" page, you will now see a "Production Plan" field where you can select the relevant production plan.
+
+Conclusion
+
+By adding a custom field for the Production Plan in the Work Order form, you can link Work Orders to their corresponding Production Plans. This customization will help you manage your production process more effectively, ensuring that each Work Order is associated with the correct Production Plan for better tracking and resource management in your banana cake factory.
+
+If you have any trouble or need further customization, you might want to consult with your ERPNext administrator or seek help from the ERPNext community.
+
+##########################################################################################
+
+To effectively manage your production process in ERPNext, you need to ensure that the mandatory fields such as Work-in-Progress Warehouse and Target Warehouse are correctly set up in your Work Order. These fields are crucial for tracking inventory during the production process.
+Step-by-Step Guide to Creating Work Orders with Mandatory Fields
+1. Ensure Warehouses are Set Up
+
+First, make sure you have the necessary warehouses set up in your system.
+
+    Navigate to Warehouses:
+        Go to Stock > Warehouse.
+
+    Create Work-in-Progress Warehouse:
+        Click New.
+        Warehouse Name: Enter "Work-in-Progress Warehouse".
+        Parent Warehouse: Select a suitable parent warehouse if applicable (e.g., "All Warehouses").
+        Save.
+
+    Create Target Warehouse:
+        Click New.
+        Warehouse Name: Enter "Finished Goods Warehouse".
+        Parent Warehouse: Select a suitable parent warehouse if applicable (e.g., "All Warehouses").
+        Save.
+
+2. Create Work Orders with Mandatory Fields
+
+    Navigate to Work Order:
+        Go to Manufacturing > Work Order.
+
+    Create a New Work Order:
+        Click New to create a new work order.
+
+    Enter Work Order Details:
+        Production Item: Select the item you are producing (e.g., "Banana Cake - Small").
+        Quantity to Manufacture: Enter the quantity (e.g., 50).
+        BOM: Select the relevant BOM (e.g., BOM-0001).
+        Planned Start Date: Enter the planned start date.
+        Work-in-Progress Warehouse: Select "Work-in-Progress Warehouse".
+        Target Warehouse: Select "Finished Goods Warehouse".
+
+    Link to Production Plan (if applicable):
+        Production Plan: Select the relevant production plan (e.g., PP-0001).
+
+    Save and Submit:
+        Click Save and then Submit to finalize the work order.
+
+Mandatory Fields Configuration
+
+If these fields are not already mandatory in your form, you can make them mandatory through customization.
+
+    Navigate to Customize Form:
+        Go to Settings > Customize Form.
+
+    Select Work Order:
+        In the "Enter Form Type" field, type and select Work Order.
+
+    Ensure Fields are Mandatory:
+        Scroll down to the fields Work-in-Progress Warehouse and Target Warehouse.
+        Check the Mandatory checkbox for both fields.
+
+    Save the Customization:
+        Click Save to save the changes.
+
+Example Screenshots (Conceptual)
+
+    Warehouse Setup:
+        Create the "Work-in-Progress Warehouse" and "Finished Goods Warehouse".
+
+    Work Order Creation:
+        Ensure that the "Work-in-Progress Warehouse" and "Target Warehouse" fields are filled in the new Work Order form.
+
+    Customize Form:
+        Set the "Work-in-Progress Warehouse" and "Target Warehouse" fields as mandatory.
+
+Conclusion
+
+By following these steps, you can ensure that your Work Orders in ERPNext have the necessary mandatory fields filled, allowing for efficient tracking of inventory during the production process. This setup will help manage your banana cake production effectively, ensuring smooth transitions from raw materials to finished goods.
+
+###########################################################################################

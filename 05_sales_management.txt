@@ -1,0 +1,264 @@
+Step 5: Sales Management
+
+    Customer Management:
+        Add customers under Selling > Customer and create profiles for your wholesale and retail clients.
+
+    Sales Orders:
+        Create sales orders under Selling > Sales Order to manage customer orders.
+
+    Invoicing:
+        Generate sales invoices under Selling > Sales Invoice and record payments received.
+
+########################################################################################        
+
+Managing sales in ERPNext involves several steps, from setting up customers to creating sales orders and invoices. Below is a detailed guide on how to manage sales for your banana cake factory using ERPNext.
+Step 5: Sales Management
+1. Customer Management
+Create Customers
+
+    Navigate to Customer Module:
+        Go to Selling > Customer.
+
+    Create a New Customer:
+        Click New to create a new customer.
+
+    Enter Customer Details for "Gourmet Grocers":
+        Customer Name: Enter "Gourmet Grocers".
+        Customer Type: Select "Company" or "Individual" based on the customer type.
+        Customer Group: Select a relevant group (e.g., "Commercial").
+        Territory: Select a relevant territory.
+        Click Save.
+
+    Repeat for "Cafe Delight":
+        Create another customer with the details:
+            Customer Name: "Cafe Delight".
+            Customer Type: "Company" or "Individual".
+            Customer Group: "Commercial".
+            Territory: Select a relevant territory.
+        Click Save.
+
+2. Create Sales Orders
+Create Sales Order SO-0001
+
+    Navigate to Sales Order Module:
+        Go to Selling > Sales Order.
+
+    Create a New Sales Order:
+        Click New to create a new sales order.
+
+    Enter Sales Order Details for SO-0001:
+        Customer: Select "Gourmet Grocers".
+        Delivery Date: Set an appropriate delivery date.
+
+    Add Items:
+        Item Code: Select "Small Banana Cake".
+            Quantity: Enter 20.
+            Rate: Enter $10 each.
+            Click Add Row to add another item.
+        Item Code: Select "Large Banana Cake".
+            Quantity: Enter 10.
+            Rate: Enter $20 each.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Create Sales Order SO-0002
+
+    Create a New Sales Order:
+        Click New to create a new sales order.
+
+    Enter Sales Order Details for SO-0002:
+        Customer: Select "Cafe Delight".
+        Delivery Date: Set an appropriate delivery date.
+
+    Add Items:
+        Item Code: Select "Small Banana Cake".
+            Quantity: Enter 30.
+            Rate: Enter $10 each.
+            Click Add Row to add another item.
+        Item Code: Select "Large Banana Cake".
+            Quantity: Enter 20.
+            Rate: Enter $20 each.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+3. Create Invoices
+Create Sales Invoice SI-0001
+
+    Navigate to Sales Invoice Module:
+        Go to Accounts > Sales Invoice.
+
+    Create a New Sales Invoice:
+        Click New to create a new sales invoice.
+
+    Link Sales Order:
+        Customer: Select "Gourmet Grocers".
+        Sales Order: Link to SO-0001 (this should automatically pull the items and quantities from the sales order).
+
+    Verify and Enter Details:
+        Ensure all details are correct.
+        Total Amount: Ensure it shows $400.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Create Sales Invoice SI-0002
+
+    Create a New Sales Invoice:
+        Click New to create a new sales invoice.
+
+    Link Sales Order:
+        Customer: Select "Cafe Delight".
+        Sales Order: Link to SO-0002 (this should automatically pull the items and quantities from the sales order).
+
+    Verify and Enter Details:
+        Ensure all details are correct.
+        Total Amount: Ensure it shows $700.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Conclusion
+
+By following these steps, you can manage your customer relationships, create sales orders, and generate invoices in ERPNext. This setup helps you keep track of your sales process, from receiving orders to invoicing and ensuring that you maintain accurate records for your banana cake factory. If any customization is needed, you can further tailor the forms and fields to suit your business requirements.
+
+########################################################################################
+To manage accounting in ERPNext, you will need to set up bank accounts, record journal entries, and create payment entries. Below is a detailed guide on how to perform these steps.
+Step 6: Accounting
+1. Set Up Bank Accounts
+Create a Bank Account
+
+    Navigate to Bank Accounts:
+        Go to Accounting > Bank Account.
+
+    Create a New Bank Account:
+        Click New to create a new bank account.
+
+    Enter Bank Account Details:
+        Account Name: Enter "Main Business Account".
+        Account Type: Select "Bank".
+        Account Number: Enter the account number (if applicable).
+        Bank: Enter the name of the bank.
+        Branch: Enter the branch details (if applicable).
+
+    Save:
+        Click Save to create the bank account.
+
+2. Record Journal Entries
+Record Rent Payment (JE-0001)
+
+    Navigate to Journal Entry:
+        Go to Accounting > Journal Entry.
+
+    Create a New Journal Entry:
+        Click New to create a new journal entry.
+
+    Enter Journal Entry Details:
+        Title: Enter "Rent Payment for Factory Space".
+        Posting Date: Enter the date of the rent payment.
+
+    Add Accounts:
+        Click Add Row to add a new row for the rent payment.
+            Account: Select "Rent Expense" (ensure this account exists in your chart of accounts).
+            Debit: Enter $1,000.
+        Click Add Row to add a new row for the bank account.
+            Account: Select "Main Business Account".
+            Credit: Enter $1,000.
+
+    Save and Submit:
+        Click Save and then Submit to finalize the journal entry.
+
+3. Create Payment Entries
+Payment to Fresh Produce Inc. for PO-0001 (PE-0001)
+
+    Navigate to Payment Entry:
+        Go to Accounting > Payment Entry.
+
+    Create a New Payment Entry:
+        Click New to create a new payment entry.
+
+    Enter Payment Entry Details:
+        Payment Type: Select "Pay".
+        Party Type: Select "Supplier".
+        Party: Select "Fresh Produce Inc.".
+        Paid From: Select "Main Business Account".
+        Paid To: Select the supplier's account.
+        Amount: Enter $500.
+        Reference No.: Enter a reference number (e.g., check number).
+        Reference Date: Enter the date of payment.
+
+    Allocate Payment Against Purchase Order:
+        In the References section, link to PO-0001 and ensure the amount is allocated correctly.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Payment to Baking Essentials Ltd. for PO-0002 (PE-0002)
+
+    Create a New Payment Entry:
+        Click New to create a new payment entry.
+
+    Enter Payment Entry Details:
+        Payment Type: Select "Pay".
+        Party Type: Select "Supplier".
+        Party: Select "Baking Essentials Ltd.".
+        Paid From: Select "Main Business Account".
+        Paid To: Select the supplier's account.
+        Amount: Enter $2,250.
+        Reference No.: Enter a reference number (e.g., check number).
+        Reference Date: Enter the date of payment.
+
+    Allocate Payment Against Purchase Order:
+        In the References section, link to PO-0002 and ensure the amount is allocated correctly.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Receipt from Gourmet Grocers for SI-0001 (PE-0003)
+
+    Create a New Payment Entry:
+        Click New to create a new payment entry.
+
+    Enter Payment Entry Details:
+        Payment Type: Select "Receive".
+        Party Type: Select "Customer".
+        Party: Select "Gourmet Grocers".
+        Received Amount: Enter $400.
+        Received From: Select the customer's account.
+        Paid To: Select "Main Business Account".
+        Reference No.: Enter a reference number (e.g., bank transaction ID).
+        Reference Date: Enter the date of receipt.
+
+    Allocate Receipt Against Sales Invoice:
+        In the References section, link to SI-0001 and ensure the amount is allocated correctly.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Receipt from Cafe Delight for SI-0002 (PE-0004)
+
+    Create a New Payment Entry:
+        Click New to create a new payment entry.
+
+    Enter Payment Entry Details:
+        Payment Type: Select "Receive".
+        Party Type: Select "Customer".
+        Party: Select "Cafe Delight".
+        Received Amount: Enter $700.
+        Received From: Select the customer's account.
+        Paid To: Select "Main Business Account".
+        Reference No.: Enter a reference number (e.g., bank transaction ID).
+        Reference Date: Enter the date of receipt.
+
+    Allocate Receipt Against Sales Invoice:
+        In the References section, link to SI-0002 and ensure the amount is allocated correctly.
+
+    Save and Submit:
+        Click Save and then Submit.
+
+Conclusion
+
+By following these steps, you can manage your bank accounts, record journal entries, and create payment entries in ERPNext. This setup helps you keep track of your financial transactions, ensuring accurate and efficient accounting for your banana cake factory.
+
+###############################################################################################

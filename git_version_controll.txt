@@ -1,0 +1,9 @@
+naruto@swe:~/frappe-bench$ cd apps/
+naruto@swe:~/frappe-bench/apps$ bench get-app https://github.com/SwethaDSalvatore/kritilabs_tech_utils.git
+naruto@swe:~/frappe-bench$ cd sites/
+naruto@swe:~/frappe-bench/sites$ bench --site narutoarmy install-app kritilabs_tech_utils
+
+naruto@swe:~/frappe-bench- bench start
+
+naruto@swe:~/frappe-bench/sites$ bench migrate
+naruto@swe:~/frappe-bench$ bench build

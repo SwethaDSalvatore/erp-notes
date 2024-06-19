@@ -1,0 +1,12 @@
+Step 8: Financial Reporting
+
+    Profit and Loss Statement:
+        Generate P&L statements under Accounting > Profit and Loss Statement to review your factory’s profitability.
+
+    Balance Sheet:
+        View your financial position with the balance sheet under Accounting > Balance Sheet.
+
+    Cash Flow Statement:
+        Monitor cash flow with reports under Accounting > Cash Flow Statement.
+
+#####################################################################################

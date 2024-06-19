@@ -1,0 +1,214 @@
+Step 3: Purchase and Procurement
+
+    Supplier Management:
+        Add suppliers under Buying > Supplier and create supplier profiles for all your raw material vendors.
+
+    Purchase Orders:
+        Create and manage purchase orders under Buying > Purchase Order to keep track of raw material procurement.
+
+    Stock Entries:
+        Use Stock > Stock Entry to log receipt of raw materials and move stock between warehouses.
+
+#########################################################################################
+
+To create stock entries in ERPNext for receiving items against purchase orders (POs), follow these steps. I'll walk you through the detailed process of creating two stock entries for the receipt of materials from two different purchase orders.
+Step-by-Step Guide to Creating Stock Entries in ERPNext
+1. Log in to ERPNext
+
+    Access your ERPNext instance:
+        Navigate to your ERPNext dashboard.
+
+2. Accessing the Stock Entry Module
+
+    Go to the Stock Module:
+        On the ERPNext dashboard, navigate to Stock.
+        Click on Stock Entry.
+
+3. Creating Stock Entry SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: Automatically generated or you can customize it.
+        Purchase Order: Link this stock entry to the purchase order (PO-0001).
+        From Supplier: Select the supplier from whom the items are being received.
+
+    Add Items:
+        Item Code: Select "Bananas".
+        Qty: Enter the quantity received (e.g., 100 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Eggs".
+        Qty: Enter the quantity received (e.g., 200 units).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save and Submit:
+        Click Save to save the stock entry.
+        Click Submit to finalize the stock entry.
+
+4. Creating Stock Entry SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: Automatically generated or you can customize it.
+        Purchase Order: Link this stock entry to the purchase order (PO-0002).
+        From Supplier: Select the supplier from whom the items are being received.
+
+    Add Items:
+        Item Code: Select "Flour".
+        Qty: Enter the quantity received (e.g., 50 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Sugar".
+        Qty: Enter the quantity received (e.g., 30 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Baking Powder".
+        Qty: Enter the quantity received (e.g., 10 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+        Click on Add Row to add another item.
+        Item Code: Select "Butter".
+        Qty: Enter the quantity received (e.g., 20 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save and Submit:
+        Click Save to save the stock entry.
+        Click Submit to finalize the stock entry.
+
+Example Screenshots (Conceptual)
+SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Purpose: Material Receipt
+    Purchase Order: PO-0001
+    Items:
+        Bananas (100 kg) to Raw Materials Warehouse
+        Eggs (200 units) to Raw Materials Warehouse
+
+SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+    Purpose: Material Receipt
+    Purchase Order: PO-0002
+    Items:
+        Flour (50 kg) to Raw Materials Warehouse
+        Sugar (30 kg) to Raw Materials Warehouse
+        Baking Powder (10 kg) to Raw Materials Warehouse
+        Butter (20 kg) to Raw Materials Warehouse
+
+Conclusion
+
+By following these steps, you can create detailed stock entries in ERPNext for the receipt of materials against specific purchase orders. This process ensures that your inventory is accurately updated, reflecting the actual stock levels of raw materials received in your banana cake factory.
+
+#######################################################################################
+
+In ERPNext, the interface may differ slightly based on versions or specific customizations. If you don't see fields like "Purchase Order" and "From Supplier" directly in the stock entry form, it's likely that these fields are not part of the default Stock Entry form and need to be linked differently. Below, I'll provide an updated step-by-step guide to creating a stock entry for receiving goods against a purchase order:
+Updated Step-by-Step Guide to Creating Stock Entries in ERPNext
+1. Log in to ERPNext
+
+    Access your ERPNext instance:
+        Navigate to your ERPNext dashboard.
+
+2. Accessing the Stock Entry Module
+
+    Go to the Stock Module:
+        On the ERPNext dashboard, navigate to Stock.
+        Click on Stock Entry.
+
+3. Creating Stock Entry SE-0001: Receipt of Bananas, Eggs from PO-0001
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: This field is usually auto-generated, but you can customize it if necessary.
+
+4. Adding Items Linked to Purchase Order
+
+Since the direct linking of the stock entry to the purchase order might not be available in the default form, follow these steps:
+
+    Add Items:
+        You will need to manually add the items as per the purchase order (PO-0001).
+
+    Add Bananas:
+        Item Code: Select "Bananas".
+        Quantity: Enter the quantity received (e.g., 100 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Add Eggs:
+        Click on Add Row to add another item.
+        Item Code: Select "Eggs".
+        Quantity: Enter the quantity received (e.g., 200 units).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+5. Save and Submit the Stock Entry
+
+    Save the Stock Entry:
+        Click Save to save the stock entry.
+
+    Submit the Stock Entry:
+        Click Submit to finalize the stock entry.
+
+6. Creating Stock Entry SE-0002: Receipt of Flour, Sugar, Baking Powder, Butter from PO-0002
+
+Repeat the above process for another purchase order.
+
+    Click on New:
+        In the Stock Entry list, click on the New button to create a new stock entry.
+
+    Select Stock Entry Type:
+        Set the Purpose to "Material Receipt".
+
+    Enter Basic Details:
+        Title: This field is usually auto-generated, but you can customize it if necessary.
+
+    Add Items:
+        Item Code: Select "Flour".
+        Quantity: Enter the quantity received (e.g., 50 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Add Sugar:
+        Click on Add Row to add another item.
+        Item Code: Select "Sugar".
+        Quantity: Enter the quantity received (e.g., 30 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Add Baking Powder:
+        Click on Add Row to add another item.
+        Item Code: Select "Baking Powder".
+        Quantity: Enter the quantity received (e.g., 10 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Add Butter:
+        Click on Add Row to add another item.
+        Item Code: Select "Butter".
+        Quantity: Enter the quantity received (e.g., 20 kg).
+        Target Warehouse: Select "Raw Materials Warehouse".
+
+    Save the Stock Entry:
+        Click Save to save the stock entry.
+
+    Submit the Stock Entry:
+        Click Submit to finalize the stock entry.
+
+Linking Stock Entries to Purchase Orders
+
+If you want to keep track of which stock entry corresponds to which purchase order, you can:
+
+    Use Custom Fields: Add a custom field in the stock entry form to reference the purchase order number.
+    Add Comments: Add a comment or note within the stock entry referencing the purchase order.
+    Attachments: Attach a copy of the purchase order to the stock entry for better tracking.
+
+Conclusion
+
+By following these steps, you can accurately record stock receipts against purchase orders in ERPNext, even if the interface does not directly link stock entries to purchase orders. This ensures your inventory records are up-to-date and correctly reflect the materials received in your banana cake factory.
